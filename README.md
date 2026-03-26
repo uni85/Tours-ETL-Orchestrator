@@ -28,8 +28,10 @@ Tours-ETL-Orchestrator/
 ├── run_project.bat        # Central Orchestration Script
 ├── LICENSE                # MIT License
 └── README.md              # Documentation
+'''
 
-# Cycling Tours: Enterprise Data Transformation Pipeline
+## Project Overview
+Tours-ETL-Orchestrator is a multi-stage **Data Transformation Pipeline** for cycling tour logistics
 
 ![Build Status](https://img.shields.io/badge/Build-Automated-success)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
