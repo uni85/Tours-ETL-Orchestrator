@@ -1,5 +1,8 @@
 # Tours-ETL-Orchestrator
 
+## Project Overview
+Tours-ETL-Orchestrator is a multi-stage **Data Transformation Pipeline** for cycling tour logistics
+
 ## Repository Structure
 ```text
 Tours-ETL-Orchestrator/
@@ -29,9 +32,6 @@ Tours-ETL-Orchestrator/
 ├── LICENSE                # MIT License
 └── README.md              # Documentation
 ```
-
-## Project Overview
-Tours-ETL-Orchestrator is a multi-stage **Data Transformation Pipeline** for cycling tour logistics
 
 ![Build Status](https://img.shields.io/badge/Build-Automated-success)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
