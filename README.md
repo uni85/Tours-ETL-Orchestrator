@@ -28,7 +28,7 @@ Tours-ETL-Orchestrator/
 │       ├── Routes.xsl
 │       ├── simpleEvents.xsl
 │       └── UpcominEvents.xsl
-├── run_project.bat        # Central Orchestration Script
+├── run_pipeline.bat        # Central Orchestration Script
 ├── LICENSE                # MIT License
 └── README.md              # Documentation
 ```
