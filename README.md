@@ -1,6 +1,8 @@
 # Tours-ETL-Orchestrator
 
-Root/
+## 📂 Repository Structure
+```text
+Tours-ETL-Orchestrator/
 ├── data/                  # Source Data & Validation Schemas
 │   ├── Tours.xml          # Primary Database
 │   ├── tours.xsd          # XML Schema Definition
@@ -12,7 +14,7 @@ Root/
 │   ├── python/            # Scripted Transformations & Validation
 │   │   ├── TransXML.py
 │   │   └── jsonValidator.py
-│   └── xsl/               # Transformation Logic
+│   └── xsl/               # Transformation Logic (10 Files)
 │       ├── availableBikes.xsl
 │       ├── Bookings.xsl
 │       ├── tourPackages.xsl
