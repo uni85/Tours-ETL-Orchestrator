@@ -1,0 +1,12 @@
+# Treat XSLT as the primary source code
+*.xsl linguist-detectable=true
+
+# Mark Java and Python as 'vendored' (helpers), so they don't dominate the stats
+src/java/* linguist-vendored
+src/python/* linguist-vendored
+
+# Tell GitHub that the 'output' folder is just documentation/generated data
+# This is the key to dropping the HTML percentage!
+output/*.html linguist-documentation
+output/*.xml linguist-documentation
+output/*.json linguist-documentation
