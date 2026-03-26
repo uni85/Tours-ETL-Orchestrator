@@ -1,0 +1,16 @@
+? Document parsed successfully. Listing Tour Packages:
+------------------------------------
+Total Packages Found: 12
+------------------------------------
+1. Alpine Adventure (ID: T001)
+2. Provence Pedal (ID: T002)
+3. Kyoto Zen Ride (ID: T003)
+4. Black Forest Beast (ID: T004)
+5. Amalfi Coastal Dream (ID: T005)
+6. Rocky Mountain Ramble (ID: T006)
+7. Icelandic Fire & Ice (ID: T007)
+8. Vietnam Peaks Explorer (ID: T008)
+9. Patagonia Glacier Trek (ID: T009)
+10. Highland Whisky Ride (ID: T010)
+11. Arizona Desert Blast (ID: T011)
+12. Croatian Island Hopper (ID: T012)

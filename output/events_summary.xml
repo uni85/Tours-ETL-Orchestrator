@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<EventList count="12">
+  <SimplifiedEvent id="E001">
+    <Name>Tour de Provence</Name>
+    <Date>2025-07-15</Date>
+    <Location>Provence</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E002">
+    <Name>Alpine Bike Fest</Name>
+    <Date>2025-08-20</Date>
+    <Location>Swiss Alps</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E003">
+    <Name>Kyoto Lantern Ride</Name>
+    <Date>2025-10-05</Date>
+    <Location>Kyoto</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E004">
+    <Name>Black Forest Endurance</Name>
+    <Date>2025-09-10</Date>
+    <Location>Black Forest</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E005">
+    <Name>Coastal Cycling Race</Name>
+    <Date>2025-06-25</Date>
+    <Location>Amalfi Coast</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E006">
+    <Name>Rockies Trail Meetup</Name>
+    <Date>2025-08-05</Date>
+    <Location>Rocky Mountains</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E007">
+    <Name>Midnight Sun Ride</Name>
+    <Date>2026-06-21</Date>
+    <Location>Iceland</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E008">
+    <Name>Northern Vietnam Challenge</Name>
+    <Date>2026-03-10</Date>
+    <Location>Vietnam</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E009">
+    <Name>Patagonia Gravel Race</Name>
+    <Date>2026-01-15</Date>
+    <Location>Patagonia</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E010">
+    <Name>Highland Games Cycle</Name>
+    <Date>2025-07-01</Date>
+    <Location>Scottish Highlands</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E011">
+    <Name>Desert Cyclocross</Name>
+    <Date>2026-02-20</Date>
+    <Location>Tucson Desert</Location>
+  </SimplifiedEvent>
+  <SimplifiedEvent id="E012">
+    <Name>Adriatic Bike Week</Name>
+    <Date>2025-05-18</Date>
+    <Location>Dalmatian Coast</Location>
+  </SimplifiedEvent>
+</EventList>

@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<GuideRoster>
+  <Guide id="G001">
+    <Name>Hans Meier</Name>
+    <Languages>
+      <Language>German</Language>
+      <Language>English</Language>
+    </Languages>
+    <AssignedPackages>
+      <Package id="T001">
+        <Name>Alpine Adventure</Name>
+      </Package>
+      <Package id="T004">
+        <Name>Black Forest Beast</Name>
+      </Package>
+    </AssignedPackages>
+  </Guide>
+  <Guide id="G002">
+    <Name>Sophie Dupont</Name>
+    <Languages>
+      <Language>French</Language>
+      <Language>English</Language>
+      <Language>Italian</Language>
+    </Languages>
+    <AssignedPackages>
+      <Package id="T002">
+        <Name>Provence Pedal</Name>
+      </Package>
+      <Package id="T005">
+        <Name>Amalfi Coastal Dream</Name>
+      </Package>
+      <Package id="T012">
+        <Name>Croatian Island Hopper</Name>
+      </Package>
+    </AssignedPackages>
+  </Guide>
+  <Guide id="G003">
+    <Name>Akiro Sato</Name>
+    <Languages>
+      <Language>Japanese</Language>
+      <Language>English</Language>
+    </Languages>
+    <AssignedPackages>
+      <Package id="T003">
+        <Name>Kyoto Zen Ride</Name>
+      </Package>
+      <Package id="T006">
+        <Name>Rocky Mountain Ramble</Name>
+      </Package>
+    </AssignedPackages>
+  </Guide>
+  <Guide id="G004">
+    <Name>Ivan Ivanov</Name>
+    <Languages>
+      <Language>Russian</Language>
+      <Language>English</Language>
+      <Language>German</Language>
+    </Languages>
+    <AssignedPackages>
+      <Package id="T007">
+        <Name>Icelandic Fire &amp; Ice</Name>
+      </Package>
+      <Package id="T011">
+        <Name>Arizona Desert Blast</Name>
+      </Package>
+    </AssignedPackages>
+  </Guide>
+  <Guide id="G005">
+    <Name>Maria Lopez</Name>
+    <Languages>
+      <Language>Spanish</Language>
+      <Language>English</Language>
+      <Language>French</Language>
+    </Languages>
+    <AssignedPackages>
+      <Package id="T008">
+        <Name>Vietnam Peaks Explorer</Name>
+      </Package>
+      <Package id="T009">
+        <Name>Patagonia Glacier Trek</Name>
+      </Package>
+    </AssignedPackages>
+  </Guide>
+  <Guide id="G006">
+    <Name>Alasdair MacLeod</Name>
+    <Languages>
+      <Language>Gaelic</Language>
+      <Language>English</Language>
+    </Languages>
+    <AssignedPackages>
+      <Package id="T010">
+        <Name>Highland Whisky Ride</Name>
+      </Package>
+    </AssignedPackages>
+  </Guide>
+</GuideRoster>

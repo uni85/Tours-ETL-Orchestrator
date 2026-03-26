@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CyclingTours xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="cycling_tours.xsd">
+
+    <Destinations>
+        <Destination id="D001">
+            <Name>Swiss Alps</Name>
+            <Country>Switzerland</Country>
+            <Description>High-altitude trails with scenic mountain views.</Description>
+        </Destination>
+        <Destination id="D002">
+            <Name>Provence</Name>
+            <Country>France</Country>
+            <Description>Lavender fields and gentle countryside routes.</Description>
+        </Destination>
+        <Destination id="D003">
+            <Name>Amalfi Coast</Name>
+            <Country>Italy</Country>
+            <Description>Coastal roads with dramatic cliffside views.</Description>
+        </Destination>
+        <Destination id="D004">
+            <Name>Kyoto</Name>
+            <Country>Japan</Country>
+            <Description>Historic temples and serene bamboo forest cycling.</Description>
+        </Destination>
+        <Destination id="D005">
+            <Name>Black Forest</Name>
+            <Country>Germany</Country>
+            <Description>Dense pine forests and rolling hills with challenging routes.</Description>
+        </Destination>
+        <Destination id="D006">
+            <Name>Rocky Mountains</Name>
+            <Country>Canada</Country>
+            <Description>Wilderness paths and breathtaking glacial lakes.</Description>
+        </Destination>
+        
+    <Destination id="D007">
+            <Name>Golden Circle</Name>
+            <Country>Iceland</Country>
+            <Description>Geothermal areas and unique volcanic landscapes.</Description>
+        </Destination>
+        <Destination id="D008">
+            <Name>Ha Giang Loop</Name>
+            <Country>Vietnam</Country>
+            <Description>Steep mountain passes and rice terraces in Northern Vietnam.</Description>
+        </Destination>
+        <Destination id="D009">
+            <Name>Patagonia</Name>
+            <Country>Argentina</Country>
+            <Description>Rugged, windswept plains with views of the Andes.</Description>
+        </Destination>
+        <Destination id="D010">
+            <Name>Scottish Highlands</Name>
+            <Country>United Kingdom</Country>
+            <Description>Lochs, castles, and challenging remote paths.</Description>
+        </Destination>
+        <Destination id="D011">
+            <Name>Tucson Desert</Name>
+            <Country>USA</Country>
+            <Description>Arid desert cycling among Saguaro cacti.</Description>
+        </Destination>
+        <Destination id="D012">
+            <Name>Dalmatian Coast</Name>
+            <Country>Croatia</Country>
+            <Description>Island hopping and clear blue Adriatic waters.</Description>
+        </Destination>
+    </Destinations>
+
+    <CyclingPaths>
+        <Path id="P001" destinationRef="D001"><Name>Alpine Ridge Trail</Name><Length unit="km">45</Length><Difficulty>Intermediate</Difficulty><Terrain>Mountain</Terrain></Path>
+        <Path id="P002" destinationRef="D002"><Name>Lavender Loop</Name><Length unit="km">30</Length><Difficulty>Beginner</Difficulty><Terrain>Countryside</Terrain></Path>
+        <Path id="P003" destinationRef="D003"><Name>Coastal Climb</Name><Length unit="km">60</Length><Difficulty>Advanced</Difficulty><Terrain>Coastal</Terrain></Path>
+        <Path id="P004" destinationRef="D004"><Name>Arashiyama Bamboo Path</Name><Length unit="km">15</Length><Difficulty>Beginner</Difficulty><Terrain>Urban/Forest</Terrain></Path>
+        <Path id="P005" destinationRef="D005"><Name>Schwarzwald Challenge</Name><Length unit="km">80</Length><Difficulty>Advanced</Difficulty><Terrain>Forest/Hills</Terrain></Path>
+        <Path id="P006" destinationRef="D006"><Name>Glacier View Loop</Name><Length unit="km">55</Length><Difficulty>Intermediate</Difficulty><Terrain>Mountain</Terrain></Path>
+        <Path id="P007" destinationRef="D001"><Name>Glacier Express Route</Name><Length unit="km">75</Length><Difficulty>Advanced</Difficulty><Terrain>Mountain</Terrain></Path>
+        <Path id="P008" destinationRef="D002"><Name>Village to Village Ride</Name><Length unit="km">40</Length><Difficulty>Intermediate</Difficulty><Terrain>Countryside</Terrain></Path>
+        <Path id="P009" destinationRef="D003"><Name>Positano Descent</Name><Length unit="km">35</Length><Difficulty>Intermediate</Difficulty><Terrain>Coastal</Terrain></Path>
+        <Path id="P010" destinationRef="D007"><Name>Geysir Hot Spring Route</Name><Length unit="km">50</Length><Difficulty>Intermediate</Difficulty><Terrain>Volcanic</Terrain></Path>
+        <Path id="P011" destinationRef="D008"><Name>Ma Pi Leng Pass</Name><Length unit="km">120</Length><Difficulty>Advanced</Difficulty><Terrain>Mountain/Road</Terrain></Path>
+        <Path id="P012" destinationRef="D009"><Name>Perito Moreno Trek</Name><Length unit="km">65</Length><Difficulty>Intermediate</Difficulty><Terrain>Gravel</Terrain></Path>
+        <Path id="P013" destinationRef="D010"><Name>Loch Ness Circuit</Name><Length unit="mi">40</Length><Difficulty>Beginner</Difficulty><Terrain>Lakeside/Road</Terrain></Path>
+        <Path id="P014" destinationRef="D011"><Name>Saguaro Sunset Ride</Name><Length unit="mi">25</Length><Difficulty>Beginner</Difficulty><Terrain>Desert/Trail</Terrain></Path>
+        <Path id="P015" destinationRef="D012"><Name>Hvar Island Trail</Name><Length unit="km">40</Length><Difficulty>Intermediate</Difficulty><Terrain>Coastal/Island</Terrain></Path>
+        <Path id="P016" destinationRef="D005"><Name>Rhine Valley Descent</Name><Length unit="km">90</Length><Difficulty>Intermediate</Difficulty><Terrain>Road</Terrain></Path>
+        <Path id="P017" destinationRef="D006"><Name>Kananaskis Gravel</Name><Length unit="km">100</Length><Difficulty>Advanced</Difficulty><Terrain>Gravel</Terrain></Path>
+        <Path id="P018" destinationRef="D004"><Name>Fushimi Inari Loop</Name><Length unit="km">20</Length><Difficulty>Beginner</Difficulty><Terrain>Urban</Terrain></Path>
+    </CyclingPaths>
+
+    <RentalBikes>
+        <Bike id="B001"><Type>Mountain</Type><Status>Available</Status><Location>Swiss Alps</Location></Bike>
+        <Bike id="B002"><Type>Road</Type><Status>Maintenance</Status><Location>Provence</Location></Bike>
+        <Bike id="B003"><Type>Hybrid</Type><Status>Available</Status><Location>Kyoto</Location></Bike>
+        <Bike id="B004"><Type>Electric</Type><Status>Available</Status><Location>Black Forest</Location></Bike>
+        <Bike id="B005"><Type>Mountain</Type><Status>Rented</Status><Location>Rocky Mountains</Location></Bike>
+        <Bike id="B006"><Type>Road</Type><Status>Available</Status><Location>Amalfi Coast</Location></Bike>
+        <Bike id="B007"><Type>Gravel</Type><Status>Available</Status><Location>Iceland</Location></Bike>
+        <Bike id="B008"><Type>Road</Type><Status>Available</Status><Location>Vietnam</Location></Bike>
+        <Bike id="B009"><Type>Mountain</Type><Status>Available</Status><Location>Patagonia</Location></Bike>
+        <Bike id="B010"><Type>Electric</Type><Status>Maintenance</Status><Location>Scottish Highlands</Location></Bike>
+        <Bike id="B011"><Type>Mountain</Type><Status>Rented</Status><Location>Tucson Desert</Location></Bike>
+        <Bike id="B012"><Type>Hybrid</Type><Status>Available</Status><Location>Dalmatian Coast</Location></Bike>
+    </RentalBikes>
+
+    <Activities>
+        <Activity id="A001"><Name>Wine Tasting</Name><Location>Provence</Location><Description>Visit local vineyards and sample regional wines.</Description></Activity>
+        <Activity id="A002"><Name>Mountain Yoga</Name><Location>Swiss Alps</Location><Description>Morning yoga sessions with panoramic views.</Description></Activity>
+        <Activity id="A003"><Name>Onsen Visit</Name><Location>Kyoto</Location><Description>Relaxing visit to a traditional Japanese hot spring.</Description></Activity>
+        <Activity id="A004"><Name>Canoeing</Name><Location>Rocky Mountains</Location><Description>Paddling a canoe on a pristine mountain lake.</Description></Activity>
+        <Activity id="A005"><Name>Local Cooking Class</Name><Location>Amalfi Coast</Location><Description>Learn to cook authentic Italian coastal dishes.</Description></Activity>
+        <Activity id="A006"><Name>Blue Lagoon Dip</Name><Location>Iceland</Location><Description>Visit a geothermal spa.</Description></Activity>
+        <Activity id="A007"><Name>Boat Trip</Name><Location>Dalmatian Coast</Location><Description>Sail around the nearby islands.</Description></Activity>
+        <Activity id="A008"><Name>Wildlife Spotting</Name><Location>Patagonia</Location><Description>Observation of local wildlife (guanacos, condors).</Description></Activity>
+        <Activity id="A009"><Name>Whisky Distillery Tour</Name><Location>Scottish Highlands</Location><Description>A tour and tasting at a famous distillery.</Description></Activity>
+        <Activity id="A010"><Name>Hiking</Name><Location>Black Forest</Location><Description>Guided hike through the high peaks.</Description></Activity>
+    </Activities>
+
+    <Events>
+        <Event id="E001"><Name>Tour de Provence</Name><Date>2025-07-15</Date><Location>Provence</Location></Event>
+        <Event id="E002"><Name>Alpine Bike Fest</Name><Date>2025-08-20</Date><Location>Swiss Alps</Location></Event>
+        <Event id="E003"><Name>Kyoto Lantern Ride</Name><Date>2025-10-05</Date><Location>Kyoto</Location></Event>
+        <Event id="E004"><Name>Black Forest Endurance</Name><Date>2025-09-10</Date><Location>Black Forest</Location></Event>
+        <Event id="E005"><Name>Coastal Cycling Race</Name><Date>2025-06-25</Date><Location>Amalfi Coast</Location></Event>
+        <Event id="E006"><Name>Rockies Trail Meetup</Name><Date>2025-08-05</Date><Location>Rocky Mountains</Location></Event>
+        <Event id="E007"><Name>Midnight Sun Ride</Name><Date>2026-06-21</Date><Location>Iceland</Location></Event>
+        <Event id="E008"><Name>Northern Vietnam Challenge</Name><Date>2026-03-10</Date><Location>Vietnam</Location></Event>
+        <Event id="E009"><Name>Patagonia Gravel Race</Name><Date>2026-01-15</Date><Location>Patagonia</Location></Event>
+        <Event id="E010"><Name>Highland Games Cycle</Name><Date>2025-07-01</Date><Location>Scottish Highlands</Location></Event>
+        <Event id="E011"><Name>Desert Cyclocross</Name><Date>2026-02-20</Date><Location>Tucson Desert</Location></Event>
+        <Event id="E012"><Name>Adriatic Bike Week</Name><Date>2025-05-18</Date><Location>Dalmatian Coast</Location></Event>
+    </Events>
+
+    <TourPackages>
+        <Package id="T001"><Name>Alpine Adventure</Name><Duration>7 days</Duration><Price currency="EUR">1200</Price><Difficulty>Intermediate</Difficulty>
+            <Includes><PathRef>P001</PathRef><PathRef>P007</PathRef><ActivityRef>A002</ActivityRef><EventRef>E002</EventRef></Includes></Package>
+        <Package id="T002"><Name>Provence Pedal</Name><Duration>5 days</Duration><Price currency="EUR">950</Price><Difficulty>Beginner</Difficulty>
+            <Includes><PathRef>P002</PathRef><ActivityRef>A001</ActivityRef><EventRef>E001</EventRef></Includes></Package>
+        <Package id="T003"><Name>Kyoto Zen Ride</Name><Duration>4 days</Duration><Price currency="JPY">85000</Price><Difficulty>Beginner</Difficulty>
+            <Includes><PathRef>P004</PathRef><PathRef>P018</PathRef><ActivityRef>A003</ActivityRef><EventRef>E003</EventRef></Includes></Package>
+        <Package id="T004"><Name>Black Forest Beast</Name><Duration>10 days</Duration><Price currency="EUR">1800</Price><Difficulty>Advanced</Difficulty>
+            <Includes><PathRef>P005</PathRef><PathRef>P016</PathRef><ActivityRef>A010</ActivityRef><EventRef>E004</EventRef></Includes></Package>
+        <Package id="T005"><Name>Amalfi Coastal Dream</Name><Duration>6 days</Duration><Price currency="EUR">1500</Price><Difficulty>Advanced</Difficulty>
+            <Includes><PathRef>P003</PathRef><PathRef>P009</PathRef><ActivityRef>A005</ActivityRef><EventRef>E005</EventRef></Includes></Package>
+        <Package id="T006"><Name>Rocky Mountain Ramble</Name><Duration>7 days</Duration><Price currency="CAD">1650</Price><Difficulty>Intermediate</Difficulty>
+            <Includes><PathRef>P006</PathRef><PathRef>P017</PathRef><ActivityRef>A004</ActivityRef><EventRef>E006</EventRef></Includes></Package>
+        <Package id="T007"><Name>Icelandic Fire &amp; Ice</Name><Duration>5 days</Duration><Price currency="USD">1400</Price><Difficulty>Intermediate</Difficulty>
+            <Includes><PathRef>P010</PathRef><ActivityRef>A006</ActivityRef><EventRef>E007</EventRef></Includes></Package>
+        <Package id="T008"><Name>Vietnam Peaks Explorer</Name><Duration>12 days</Duration><Price currency="USD">2100</Price><Difficulty>Advanced</Difficulty>
+            <Includes><PathRef>P011</PathRef><ActivityRef>A003</ActivityRef><EventRef>E008</EventRef></Includes></Package>
+        <Package id="T009"><Name>Patagonia Glacier Trek</Name><Duration>8 days</Duration><Price currency="USD">1950</Price><Difficulty>Advanced</Difficulty>
+            <Includes><PathRef>P012</PathRef><ActivityRef>A008</ActivityRef><EventRef>E009</EventRef></Includes></Package>
+        <Package id="T010"><Name>Highland Whisky Ride</Name><Duration>4 days</Duration><Price currency="GBP">750</Price><Difficulty>Beginner</Difficulty>
+            <Includes><PathRef>P013</PathRef><ActivityRef>A009</ActivityRef><EventRef>E010</EventRef></Includes></Package>
+        <Package id="T011"><Name>Arizona Desert Blast</Name><Duration>3 days</Duration><Price currency="USD">600</Price><Difficulty>Beginner</Difficulty>
+            <Includes><PathRef>P014</PathRef><ActivityRef>A002</ActivityRef><EventRef>E011</EventRef></Includes></Package>
+        <Package id="T012"><Name>Croatian Island Hopper</Name><Duration>9 days</Duration><Price currency="EUR">1700</Price><Difficulty>Intermediate</Difficulty>
+            <Includes><PathRef>P015</PathRef><ActivityRef>A007</ActivityRef><EventRef>E012</EventRef></Includes></Package>
+    </TourPackages>
+
+    <Clients>
+        <Client id="C001"><Name>Emma Dubois</Name><Email>emma.dubois@example.com</Email><Phone>+33-612345678</Phone></Client>
+        <Client id="C002"><Name>Luca Romano</Name><Email>luca.romano@example.it</Email><Phone>+39-3471234567</Phone></Client>
+        <Client id="C003"><Name>Kenji Tanaka</Name><Email>kenji.tanaka@example.jp</Email><Phone>+81-9012345678</Phone></Client>
+        <Client id="C004"><Name>Sarah Schmidt</Name><Email>sarah.schmidt@example.de</Email><Phone>+49-1709876543</Phone></Client>
+        <Client id="C005"><Name>David Miller</Name><Email>david.miller@example.ca</Email><Phone>+1-4035551234</Phone></Client>
+        <Client id="C006"><Name>Isabella Rossi</Name><Email>isabella.rossi@example.it</Email><Phone>+39-3334567890</Phone></Client>
+        <Client id="C007"><Name>Anya Petrova</Name><Email>anya.petrova@example.ru</Email><Phone>+7-9001112233</Phone></Client>
+        <Client id="C008"><Name>Miguel Garcia</Name><Email>miguel.garcia@example.es</Email><Phone>+34-600987654</Phone></Client>
+        <Client id="C009"><Name>Chloe Wilson</Name><Email>chloe.wilson@example.co.uk</Email><Phone>+44-7700900123</Phone></Client>
+        <Client id="C010"><Name>Javier Santos</Name><Email>javier.santos@example.br</Email><Phone>+55-21998765432</Phone></Client>
+        <Client id="C011"><Name>Mei Lin</Name><Email>mei.lin@example.cn</Email><Phone>+86-13901234567</Phone></Client>
+        <Client id="C012"><Name>Omar Hassan</Name><Email>omar.hassan@example.ae</Email><Phone>+971-501234567</Phone></Client>
+    </Clients>
+
+    <Bookings>
+        <Booking id="BK001"><ClientRef>C001</ClientRef><PackageRef>T001</PackageRef><Date>2025-08-01</Date></Booking>
+        <Booking id="BK002"><ClientRef>C002</ClientRef><PackageRef>T002</PackageRef><Date>2025-07-10</Date></Booking>
+        <Booking id="BK003"><ClientRef>C003</ClientRef><PackageRef>T003</PackageRef><Date>2025-09-28</Date></Booking>
+        <Booking id="BK004"><ClientRef>C004</ClientRef><PackageRef>T004</PackageRef><Date>2025-09-01</Date></Booking>
+        <Booking id="BK005"><ClientRef>C005</ClientRef><PackageRef>T006</PackageRef><Date>2025-07-25</Date></Booking>
+        <Booking id="BK006"><ClientRef>C006</ClientRef><PackageRef>T005</PackageRef><Date>2025-06-20</Date></Booking>
+        <Booking id="BK007"><ClientRef>C007</ClientRef><PackageRef>T007</PackageRef><Date>2026-06-15</Date></Booking>
+        <Booking id="BK008"><ClientRef>C008</ClientRef><PackageRef>T008</PackageRef><Date>2026-03-01</Date></Booking>
+        <Booking id="BK009"><ClientRef>C009</ClientRef><PackageRef>T010</PackageRef><Date>2025-06-10</Date></Booking>
+        <Booking id="BK010"><ClientRef>C010</ClientRef><PackageRef>T012</PackageRef><Date>2025-05-10</Date></Booking>
+        <Booking id="BK011"><ClientRef>C011</ClientRef><PackageRef>T009</PackageRef><Date>2026-01-05</Date></Booking>
+        <Booking id="BK012"><ClientRef>C012</ClientRef><PackageRef>T011</PackageRef><Date>2026-02-15</Date></Booking>
+    </Bookings>
+
+    <Guides>
+        <Guide id="G001">
+            <Name>Hans Meier</Name><Languages><Language>German</Language><Language>English</Language></Languages>
+            <AssignedPackages><PackageRef>T001</PackageRef><PackageRef>T004</PackageRef></AssignedPackages>
+        </Guide>
+        <Guide id="G002">
+            <Name>Sophie Dupont</Name><Languages><Language>French</Language><Language>English</Language><Language>Italian</Language></Languages>
+            <AssignedPackages><PackageRef>T002</PackageRef><PackageRef>T005</PackageRef><PackageRef>T012</PackageRef></AssignedPackages>
+        </Guide>
+        <Guide id="G003">
+            <Name>Akiro Sato</Name><Languages><Language>Japanese</Language><Language>English</Language></Languages>
+            <AssignedPackages><PackageRef>T003</PackageRef><PackageRef>T006</PackageRef></AssignedPackages>
+        </Guide>
+        <Guide id="G004">
+            <Name>Ivan Ivanov</Name><Languages><Language>Russian</Language><Language>English</Language><Language>German</Language></Languages>
+            <AssignedPackages><PackageRef>T007</PackageRef><PackageRef>T011</PackageRef></AssignedPackages>
+        </Guide>
+        <Guide id="G005">
+            <Name>Maria Lopez</Name><Languages><Language>Spanish</Language><Language>English</Language><Language>French</Language></Languages>
+            <AssignedPackages><PackageRef>T008</PackageRef><PackageRef>T009</PackageRef></AssignedPackages>
+        </Guide>
+        <Guide id="G006">
+            <Name>Alasdair MacLeod</Name><Languages><Language>Gaelic</Language><Language>English</Language></Languages>
+            <AssignedPackages><PackageRef>T010</PackageRef></AssignedPackages>
+        </Guide>
+    </Guides>
+
+</CyclingTours>

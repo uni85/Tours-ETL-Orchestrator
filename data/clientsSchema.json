@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Client List Schema",
+    "description": "Schema for validating the list of cycling tour clients.",
+    "type": "object",
+    "properties": {
+        "clients": {
+            "type": "array",
+            "description": "A list of all clients.",
+            "items": {
+                "type": "object",
+                "required": ["id", "name", "email", "phone"],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "description": "Unique client ID (Cxxx)."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "Full name of the client."
+                    },
+                    "email": {
+                        "type": "string",
+                        "format": "email",
+                        "description": "Client's email address."
+                    },
+                    "phone": {
+                        "type": "string",
+                        "description": "Client's phone number."
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": ["clients"],
+    "additionalProperties": false
+}

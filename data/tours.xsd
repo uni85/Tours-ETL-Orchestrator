@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="CyclingTours">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Destinations" type="DestinationsType"/>
+                <xs:element name="CyclingPaths" type="CyclingPathsType"/>
+                <xs:element name="RentalBikes" type="RentalBikesType"/>
+                <xs:element name="Activities" type="ActivitiesType"/>
+                <xs:element name="Events" type="EventsType"/>
+                <xs:element name="TourPackages" type="TourPackagesType"/>
+                <xs:element name="Clients" type="ClientsType"/>
+                <xs:element name="Bookings" type="BookingsType"/>
+                <xs:element name="Guides" type="GuidesType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="DestinationsType">
+        <xs:sequence>
+            <xs:element name="Destination" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Name" type="xs:string"/>
+                        <xs:element name="Country" type="xs:string"/>
+                        <xs:element name="Description" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CyclingPathsType">
+        <xs:sequence>
+            <xs:element name="Path" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Name" type="xs:string"/>
+                        <xs:element name="Length">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:decimal">
+                                        <xs:attribute name="unit" use="required">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="km"/>
+                                                    <xs:enumeration value="mi"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:attribute>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="Difficulty">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Beginner"/>
+                                    <xs:enumeration value="Intermediate"/>
+                                    <xs:enumeration value="Advanced"/>
+                                    <xs:enumeration value="Expert"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Terrain" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                    <xs:attribute name="destinationRef" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="RentalBikesType">
+        <xs:sequence>
+            <xs:element name="Bike" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Type" type="xs:string"/>
+                        <xs:element name="Status">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:string">
+                                    <xs:enumeration value="Available"/>
+                                    <xs:enumeration value="Rented"/>
+                                    <xs:enumeration value="Maintenance"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="Location" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ActivitiesType">
+        <xs:sequence>
+            <xs:element name="Activity" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Name" type="xs:string"/>
+                        <xs:element name="Location" type="xs:string"/>
+                        <xs:element name="Description" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="EventsType">
+        <xs:sequence>
+            <xs:element name="Event" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Name" type="xs:string"/>
+                        <xs:element name="Date" type="xs:date"/>
+                        <xs:element name="Location" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="TourPackagesType">
+        <xs:sequence>
+            <xs:element name="Package" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Name" type="xs:string"/>
+                        <xs:element name="Duration" type="xs:string"/>
+                        <xs:element name="Price">
+                            <xs:complexType>
+                                <xs:simpleContent>
+                                    <xs:extension base="xs:decimal">
+                                        <xs:attribute name="currency" type="xs:string" use="required"/>
+                                    </xs:extension>
+                                </xs:simpleContent>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="Difficulty" type="xs:string"/>
+                        <xs:element name="Includes">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="PathRef" type="xs:string" maxOccurs="unbounded"/>
+                                    <xs:element name="ActivityRef" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+                                    <xs:element name="EventRef" type="xs:string" maxOccurs="unbounded" minOccurs="0"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="ClientsType">
+        <xs:sequence>
+            <xs:element name="Client" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Name" type="xs:string"/>
+                        <xs:element name="Email" type="xs:string"/>
+                        <xs:element name="Phone" type="xs:string"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="BookingsType">
+        <xs:sequence>
+            <xs:element name="Booking" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ClientRef" type="xs:string"/>
+                        <xs:element name="PackageRef" type="xs:string"/>
+                        <xs:element name="Date" type="xs:date"/>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="GuidesType">
+        <xs:sequence>
+            <xs:element name="Guide" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Name" type="xs:string"/>
+                        <xs:element name="Languages">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="Language" type="xs:string" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="AssignedPackages">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="PackageRef" type="xs:string" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>

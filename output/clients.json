@@ -1,0 +1,12 @@
+{"clients": [{"id":"C001","name":"Emma Dubois","email":"emma.dubois@example.com","phone":"+33-612345678"},
+{"id":"C002","name":"Luca Romano","email":"luca.romano@example.it","phone":"+39-3471234567"},
+{"id":"C003","name":"Kenji Tanaka","email":"kenji.tanaka@example.jp","phone":"+81-9012345678"},
+{"id":"C004","name":"Sarah Schmidt","email":"sarah.schmidt@example.de","phone":"+49-1709876543"},
+{"id":"C005","name":"David Miller","email":"david.miller@example.ca","phone":"+1-4035551234"},
+{"id":"C006","name":"Isabella Rossi","email":"isabella.rossi@example.it","phone":"+39-3334567890"},
+{"id":"C007","name":"Anya Petrova","email":"anya.petrova@example.ru","phone":"+7-9001112233"},
+{"id":"C008","name":"Miguel Garcia","email":"miguel.garcia@example.es","phone":"+34-600987654"},
+{"id":"C009","name":"Chloe Wilson","email":"chloe.wilson@example.co.uk","phone":"+44-7700900123"},
+{"id":"C010","name":"Javier Santos","email":"javier.santos@example.br","phone":"+55-21998765432"},
+{"id":"C011","name":"Mei Lin","email":"mei.lin@example.cn","phone":"+86-13901234567"},
+{"id":"C012","name":"Omar Hassan","email":"omar.hassan@example.ae","phone":"+971-501234567"}]}
