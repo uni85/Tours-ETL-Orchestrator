@@ -1,6 +1,6 @@
 # Tours-ETL-Orchestrator
 
-## 📂 Repository Structure
+## Repository Structure
 ```text
 Tours-ETL-Orchestrator/
 ├── data/                  # Source Data & Validation Schemas
@@ -29,16 +29,16 @@ Tours-ETL-Orchestrator/
 ├── LICENSE                # MIT License
 └── README.md              # Documentation
 
-📝 Integrated Professional README.mdCopy the entire block below for your README.md:Markdown# 🚴 Cycling Tours: Enterprise Data Transformation Pipeline
+# Cycling Tours: Enterprise Data Transformation Pipeline
 
 ![Build Status](https://img.shields.io/badge/Build-Automated-success)
 ![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
-## 📋 Project Overview
+## Project Overview
 This repository contains a high-performance **Multi-Stage Data Pipeline** designed for a global cycling tour agency. The system centralizes logistics and booking data in a validated XML "Source of Truth" and utilizes a hybrid **Java/Python architecture** to automate business intelligence reporting.
 
-## 🏗️ Repository Structure
+## Repository Structure
 The project is modularized to separate data, logic, and presentation:
 
 * **`/data`**: Contains the primary XML database and its associated XSD and JSON schemas.
@@ -50,7 +50,7 @@ The project is modularized to separate data, logic, and presentation:
 
 ---
 
-## 🚀 The Pipeline (run_pipeline.bat)
+## The Pipeline (run_pipeline.bat)
 The entire workflow is automated through a Windows Batch script. It manages the lifecycle from raw data validation to final asset generation.
 
 ### Pipeline Logic:
@@ -61,7 +61,7 @@ The entire workflow is automated through a Windows Batch script. It manages the 
 
 ```batch
 @ECHO OFF
-TITLE ✅ Cycling Tours Pipeline Execution
+TITLE Cycling Tours Pipeline Execution
 
 :: 1. Preparation
 IF NOT EXIST output mkdir output
@@ -89,4 +89,4 @@ python src/python/jsonValidator.py > output\clients_validation_status.txt
 
 ECHO [PIPELINE COMPLETE] Generated 12 assets in /output.
 PAUSE
-🛠️ Technology StackCore: XML, XPath, XSLT 1.0.Java: javax.xml.transform, org.w3c.dom.Python: lxml (Processing), jsonschema (Validation).Schemas: XSD (XML), Draft-07 (JSON).📦 Output CatalogData TargetFormatBusiness UseInventory DashboardHTMLReal-time rental bike status.Booking ReportHTMLClient schedule management.Path DataJSONMap integration for mobile apps.Event SummaryXMLThird-party calendar syndication.
+Technology StackCore: XML, XPath, XSLT 1.0.Java: javax.xml.transform, org.w3c.dom.Python: lxml (Processing), jsonschema (Validation).Schemas: XSD (XML), Draft-07 (JSON) Output CatalogData TargetFormatBusiness UseInventory DashboardHTMLReal-time rental bike status.Booking ReportHTMLClient schedule management.Path DataJSONMap integration for mobile apps.Event SummaryXMLThird-party calendar syndication.
